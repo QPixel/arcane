@@ -71,11 +71,7 @@ ARG VERSION
 ARG REVISION
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends ca-certificates curl tzdata tar gzip \
-    vainfo clinfo libdrm2 libsystemd0 \
-    && if [ "$TARGETARCH" = "amd64" ]; then \
-        apt-get install -y --no-install-recommends intel-gpu-tools; \
-    fi \
+    && apt-get install -y --no-install-recommends ca-certificates curl tzdata tar gzip libdrm2 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV GIN_MODE=release
