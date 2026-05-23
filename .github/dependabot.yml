@@ -18,9 +18,7 @@ multi-ecosystem-groups:
 updates:
   - package-ecosystem: "npm"
     directories:
-      - "/frontend"
-      - "/tests"
-      - "/email-templates"
+      - "/"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
     versioning-strategy: "increase-if-necessary"
