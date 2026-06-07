@@ -17,14 +17,14 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/internal/models"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/libarcane/crypto"
 	arcaneupdater "github.com/getarcaneapp/arcane/types/v2/updater"
-	moduleapi "github.com/getarcaneapp/updater/api"
-	updaterlabels "github.com/getarcaneapp/updater/pkg/labels"
-	moduletypes "github.com/getarcaneapp/updater/types"
 	"github.com/moby/moby/api/types/container"
 	dockertypesimage "github.com/moby/moby/api/types/image"
 	"github.com/moby/moby/client"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	moduleapi "go.getarcane.app/updater/api"
+	updaterlabels "go.getarcane.app/updater/pkg/labels"
+	moduletypes "go.getarcane.app/updater/types"
 )
 
 type fakeDockerClientProviderInternal struct {

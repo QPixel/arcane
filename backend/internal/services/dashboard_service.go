@@ -15,8 +15,8 @@ import (
 	dashboardtypes "github.com/getarcaneapp/arcane/types/v2/dashboard"
 	imagetypes "github.com/getarcaneapp/arcane/types/v2/image"
 	versiontypes "github.com/getarcaneapp/arcane/types/v2/version"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	dockercontainer "github.com/moby/moby/api/types/container"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 	"golang.org/x/sync/errgroup"
 )
 

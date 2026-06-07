@@ -21,9 +21,9 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/utils"
 	"github.com/getarcaneapp/arcane/types/v2/containerregistry"
 	"github.com/getarcaneapp/arcane/types/v2/imageupdate"
-	updaterdigest "github.com/getarcaneapp/updater/pkg/digest"
 	"github.com/moby/moby/api/types/image"
 	"github.com/moby/moby/client"
+	updaterdigest "go.getarcane.app/updater/pkg/digest"
 	"golang.org/x/sync/errgroup"
 	"gorm.io/gorm"
 )

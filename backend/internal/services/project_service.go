@@ -37,8 +37,8 @@ import (
 	"github.com/getarcaneapp/arcane/types/v2/containerregistry"
 	imagetypes "github.com/getarcaneapp/arcane/types/v2/image"
 	"github.com/getarcaneapp/arcane/types/v2/project"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	"github.com/moby/moby/api/types/container"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 	"gorm.io/gorm"
 )
 

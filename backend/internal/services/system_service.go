@@ -16,10 +16,10 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/utils"
 	containertypes "github.com/getarcaneapp/arcane/types/v2/container"
 	"github.com/getarcaneapp/arcane/types/v2/system"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	"github.com/goccy/go-yaml"
 	"github.com/moby/moby/api/types/container"
 	"github.com/moby/moby/client"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 	"golang.org/x/sync/errgroup"
 )
 

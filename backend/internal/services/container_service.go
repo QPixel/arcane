@@ -26,11 +26,11 @@ import (
 	containertypes "github.com/getarcaneapp/arcane/types/v2/container"
 	"github.com/getarcaneapp/arcane/types/v2/containerregistry"
 	imagetypes "github.com/getarcaneapp/arcane/types/v2/image"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	"github.com/moby/moby/api/types/container"
 	"github.com/moby/moby/api/types/events"
 	"github.com/moby/moby/api/types/network"
 	"github.com/moby/moby/client"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 )
 
 type ContainerService struct {

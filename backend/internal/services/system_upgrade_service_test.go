@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/getarcaneapp/arcane/backend/v2/internal/common"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	containertypes "github.com/moby/moby/api/types/container"
 	mounttypes "github.com/moby/moby/api/types/mount"
 	networktypes "github.com/moby/moby/api/types/network"
 	"github.com/stretchr/testify/require"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 )
 
 // TestSystemUpgradeService_UpgradeFlag tests the upgrading flag behavior

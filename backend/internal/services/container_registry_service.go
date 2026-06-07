@@ -23,11 +23,11 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/utils"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/utils/cache"
 	"github.com/getarcaneapp/arcane/types/v2/containerregistry"
-	updaterdigest "github.com/getarcaneapp/updater/pkg/digest"
-	updaterrefs "github.com/getarcaneapp/updater/pkg/refs"
-	updaterregistry "github.com/getarcaneapp/updater/pkg/registry"
 	dockerregistry "github.com/moby/moby/api/types/registry"
 	"github.com/moby/moby/client"
+	updaterdigest "go.getarcane.app/updater/pkg/digest"
+	updaterrefs "go.getarcane.app/updater/pkg/refs"
+	updaterregistry "go.getarcane.app/updater/pkg/registry"
 )
 
 const (

@@ -11,12 +11,12 @@ import (
 
 	docker "github.com/getarcaneapp/arcane/backend/v2/pkg/dockerutil"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/libarcane"
-	updaterlabels "github.com/getarcaneapp/updater/pkg/labels"
-	updaterlogs "github.com/getarcaneapp/updater/pkg/logs"
 	"github.com/moby/moby/api/types/container"
 	"github.com/moby/moby/api/types/network"
 	"github.com/moby/moby/client"
 	"github.com/spf13/cobra"
+	updaterlabels "go.getarcane.app/updater/pkg/labels"
+	updaterlogs "go.getarcane.app/updater/pkg/logs"
 )
 
 var (

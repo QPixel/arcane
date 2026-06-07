@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/getarcaneapp/arcane/backend/v2/internal/models"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	"github.com/moby/moby/api/types/container"
 	dockertypesimage "github.com/moby/moby/api/types/image"
 	"github.com/opencontainers/go-digest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 )
 
 func TestVersionService_GetAppVersionInfoDoesNotUseStoredDigestUpdateForSemverBuildInternal(t *testing.T) {

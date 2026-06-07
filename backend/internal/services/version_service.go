@@ -17,9 +17,9 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/libarcane"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/utils/cache"
 	"github.com/getarcaneapp/arcane/types/v2/version"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	containertypes "github.com/moby/moby/api/types/container"
 	"github.com/moby/moby/client"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 	"golang.org/x/mod/semver"
 )
 

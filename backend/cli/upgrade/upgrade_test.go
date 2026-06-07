@@ -3,8 +3,8 @@ package upgrade
 import (
 	"testing"
 
-	updaterlabels "github.com/getarcaneapp/updater/pkg/labels"
 	"github.com/stretchr/testify/require"
+	updaterlabels "go.getarcane.app/updater/pkg/labels"
 )
 
 func TestNormalizeRecreatedArcaneLabelsInternal(t *testing.T) {

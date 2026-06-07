@@ -15,10 +15,10 @@ import (
 	dockerutils "github.com/getarcaneapp/arcane/backend/v2/pkg/dockerutil"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/libarcane"
 	"github.com/getarcaneapp/arcane/backend/v2/pkg/libarcane/timeouts"
-	libupdater "github.com/getarcaneapp/updater/pkg/labels"
 	containertypes "github.com/moby/moby/api/types/container"
 	mounttypes "github.com/moby/moby/api/types/mount"
 	"github.com/moby/moby/client"
+	libupdater "go.getarcane.app/updater/pkg/labels"
 )
 
 const defaultArcaneUpgraderImageInternal = "ghcr.io/getarcaneapp/arcane:latest"
