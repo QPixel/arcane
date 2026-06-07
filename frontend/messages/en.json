@@ -2968,16 +2968,7 @@
 	"roles_create_title": "Create role",
 	"roles_edit_title": "Edit role",
 	"roles_delete_title": "Delete role \"{name}\"?",
-	"roles_delete_selected_title": [
-		{
-			"declarations": ["input count", "local countPlural = count: plural"],
-			"selectors": ["countPlural"],
-			"match": {
-				"countPlural=one": "Delete {count} role?",
-				"countPlural=other": "Delete {count} roles?"
-			}
-		}
-	],
+	"roles_delete_selected_title": "Delete {count} role(s)?",
 	"roles_delete_message": "Delete role \"{name}\"? This removes every assignment of it.",
 	"roles_save_changes": "Save changes",
 	"roles_clone_button": "Clone as custom role",
@@ -2997,16 +2988,7 @@
 	"roles_col_type": "Type",
 	"roles_col_assigned_users": "Assigned users",
 	"roles_col_permissions": "Permissions",
-	"roles_assigned_users_count": [
-		{
-			"declarations": ["input count", "local countPlural = count: plural"],
-			"selectors": ["countPlural"],
-			"match": {
-				"countPlural=one": "{count} user",
-				"countPlural=other": "{count} users"
-			}
-		}
-	],
+	"roles_assigned_users_count": "{count} user(s)",
 	"_comment_permissions": "=== PERMISSION PICKER ===",
 	"permissions_group_label": "{resource} ({selected}/{total})",
 	"permissions_select_all": "Select all",
