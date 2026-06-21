@@ -398,6 +398,20 @@ fix target="all":
     @just "_fix-{{ target }}"
 
 # -----------------------------------------------------------------------------
+# Security
+# -----------------------------------------------------------------------------
+
+# Run Snyk against all projects including dev dependencies
+[group('security')]
+_snyk-scan:
+    snyk test --all-projects --dev --policy-path=.snyk
+
+# Snyk targets. Valid: "scan".
+[group('security')]
+snyk target="scan":
+    @just "_snyk-{{ target }}"
+
+# -----------------------------------------------------------------------------
 # Dependencies
 # -----------------------------------------------------------------------------
 
