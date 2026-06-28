@@ -159,7 +159,10 @@
 									</div>
 									<div class="min-w-0 flex-1">
 										<p class="text-muted-foreground text-sm font-medium">{m.common_driver()}</p>
-										<p class="mt-1 cursor-pointer text-sm font-semibold select-all sm:text-base" title={m.common_click_to_select()}>
+										<p
+											class="mt-1 cursor-pointer text-sm font-semibold select-all sm:text-base"
+											title={m.common_click_to_select()}
+										>
 											{volume.driver}
 										</p>
 									</div>
@@ -171,7 +174,10 @@
 									</div>
 									<div class="min-w-0 flex-1">
 										<p class="text-muted-foreground text-sm font-medium">{m.common_created()}</p>
-										<p class="mt-1 cursor-pointer text-sm font-semibold select-all sm:text-base" title={m.common_click_to_select()}>
+										<p
+											class="mt-1 cursor-pointer text-sm font-semibold select-all sm:text-base"
+											title={m.common_click_to_select()}
+										>
 											{createdDate}
 										</p>
 									</div>
@@ -214,7 +220,10 @@
 									</div>
 									<div class="min-w-0 flex-1">
 										<p class="text-muted-foreground text-sm font-medium">{m.common_mountpoint()}</p>
-										<div class="bg-muted/50 mt-2 cursor-pointer rounded-lg border p-3 select-all" title={m.common_click_to_select()}>
+										<div
+											class="bg-muted/50 mt-2 cursor-pointer rounded-lg border p-3 select-all"
+											title={m.common_click_to_select()}
+										>
 											<code class="font-mono text-sm break-all">{volume.mountpoint}</code>
 										</div>
 									</div>

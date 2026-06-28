@@ -176,7 +176,10 @@
 							</div>
 							<div class="min-w-0 flex-1">
 								<p class="text-muted-foreground text-sm font-medium">{m.common_name()}</p>
-								<p class="mt-1 cursor-pointer text-sm font-semibold break-all select-all sm:text-base" title={m.common_click_to_select()}>
+								<p
+									class="mt-1 cursor-pointer text-sm font-semibold break-all select-all sm:text-base"
+									title={m.common_click_to_select()}
+								>
 									{network.name}
 								</p>
 							</div>
@@ -200,7 +203,10 @@
 							</div>
 							<div class="min-w-0 flex-1">
 								<p class="text-muted-foreground text-sm font-medium">{m.common_scope()}</p>
-								<p class="mt-1 cursor-pointer text-sm font-semibold capitalize select-all sm:text-base" title={m.common_click_to_select()}>
+								<p
+									class="mt-1 cursor-pointer text-sm font-semibold capitalize select-all sm:text-base"
+									title={m.common_click_to_select()}
+								>
 									{network.scope}
 								</p>
 							</div>

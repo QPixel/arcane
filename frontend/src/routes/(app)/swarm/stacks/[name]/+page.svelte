@@ -81,7 +81,9 @@
 	const totalServices = $derived(services?.pagination?.totalItems ?? services?.data?.length ?? 0);
 	const totalTasks = $derived(tasks?.pagination?.totalItems ?? tasks?.data?.length ?? 0);
 	const stackSubtitle = $derived(
-		hasLiveStack ? m.swarm_stack_namespace({ namespace: stack?.namespace ?? stackName }) : m.swarm_stack_saved_source({ stackName })
+		hasLiveStack
+			? m.swarm_stack_namespace({ namespace: stack?.namespace ?? stackName })
+			: m.swarm_stack_saved_source({ stackName })
 	);
 
 	async function fetchStackServices(options: typeof servicesRequestOptions) {
