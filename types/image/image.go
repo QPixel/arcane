@@ -472,7 +472,6 @@ func NewDetailSummary(src *image.InspectResponse) DetailSummary {
 			}
 		}
 		out.Config.WorkingDir = src.Config.WorkingDir
-		//lint:ignore SA1019 Mirror Docker inspect data; deprecated only for new image builders.
 		out.Config.ArgsEscaped = src.Config.ArgsEscaped
 	}
 
