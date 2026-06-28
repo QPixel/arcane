@@ -328,7 +328,7 @@
 						{m.common_tags()}
 					</span>
 					{#each repoTags as tag (tag)}
-						<Badge variant="secondary" class="cursor-pointer text-xs select-all" title="Click to select">
+						<Badge variant="secondary" class="cursor-pointer text-xs select-all" title={m.common_click_to_select()}>
 							{tag}
 						</Badge>
 					{/each}
