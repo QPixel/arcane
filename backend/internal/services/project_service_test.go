@@ -30,7 +30,7 @@ import (
 	"github.com/getarcaneapp/arcane/types/v2/containerregistry"
 	imagetypes "github.com/getarcaneapp/arcane/types/v2/image"
 	projecttypes "github.com/getarcaneapp/arcane/types/v2/project"
-	glsqlite "github.com/glebarez/sqlite"
+	sqlite "github.com/libtnb/sqlite"
 	"github.com/moby/moby/api/types/container"
 	dockertypesimage "github.com/moby/moby/api/types/image"
 	dockerregistry "github.com/moby/moby/api/types/registry"
@@ -72,7 +72,7 @@ var _ buildtypes.Builder = testBuildBuilder{}
 
 func setupProjectTestDB(t *testing.T) *database.DB {
 	t.Helper()
-	db, err := gorm.Open(glsqlite.Open(":memory:"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
 	require.NoError(t, err)
 	require.NoError(t, db.AutoMigrate(&models.Project{}, &models.SettingVariable{}, &models.ImageUpdateRecord{}, &models.Event{}))
 	return &database.DB{DB: db}

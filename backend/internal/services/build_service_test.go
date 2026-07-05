@@ -13,7 +13,7 @@ import (
 	"github.com/getarcaneapp/arcane/backend/v2/internal/database"
 	"github.com/getarcaneapp/arcane/backend/v2/internal/models"
 	buildgit "github.com/getarcaneapp/arcane/backend/v2/pkg/gitutil"
-	glsqlite "github.com/glebarez/sqlite"
+	sqlite "github.com/libtnb/sqlite"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	buildtypes "go.getarcane.app/builds/types"
@@ -424,7 +424,7 @@ func (b testBuildRecorder) BuildImage(_ context.Context, req buildtypes.BuildReq
 }
 
 func setupBuildHistoryTestDB() (*database.DB, error) {
-	db, err := gorm.Open(glsqlite.Open(":memory:"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
 	if err != nil {
 		return nil, err
 	}

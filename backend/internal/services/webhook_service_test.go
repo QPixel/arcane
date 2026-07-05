@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/getarcaneapp/arcane/types/v2"
-	glsqlite "github.com/glebarez/sqlite"
+	sqlite "github.com/libtnb/sqlite"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	libcrypto "go.getarcane.app/sys/crypto"
@@ -26,7 +26,7 @@ func setupWebhookServiceTestDB(t *testing.T) *database.DB {
 	initWebhookTokenCryptoForTests()
 
 	dsn := fmt.Sprintf("file:%s?mode=memory&cache=shared", strings.NewReplacer("/", "_", " ", "_").Replace(t.Name()))
-	db, err := gorm.Open(glsqlite.Open(dsn), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open(dsn), &gorm.Config{})
 	require.NoError(t, err)
 	require.NoError(t, db.AutoMigrate(&models.Webhook{}))
 
